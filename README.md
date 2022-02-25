@@ -1,8 +1,8 @@
 # 📝 SAUCE-EDIT
 A command-line SAUCE record editor for ANSI art files.
 
-![Show Sauce](screenshots/screen1.png)
-![Show Sauce](screenshots/screen2.png)
+<img src="/robbiew/sauce-edit/raw/main/screenshots/screen1.png" alt="Show Sauce" style="width: 100%;">
+
 
 ## INSTALL
 - Binaries are in the Release folder.  Only Linux64 for now.
