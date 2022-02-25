@@ -30,7 +30,7 @@ sauce-edit -path /path/to/file.ans
 
 ## License / Credit
 
-sauce-edit utilizies [go-ansi](https://github.com/ActiveState/go-ansi) which is released under the BSD 3-Clause license. It was, in turn, based on [ansilove/C](https://github.com/ansilove/ansilove). Refer to the go-ansi license for legal stuff! I thank these folks for making such awesome code. 👍
+sauce-edit utilizies [go-ansi](https://github.com/ActiveState/go-ansi) which is released under the BSD 3-Clause license. It was, in turn, based on [ansilove/C](https://github.com/ansilove/ansilove). I thank these folks for making such awesome code. 👍
 
 
 ## TO-DO
