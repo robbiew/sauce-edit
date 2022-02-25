@@ -10,7 +10,7 @@ A command-line SAUCE record editor for ANSI art files.
   
 
 ## INSTALL
-- Binaries are in the Release folder.  Only Linux64 for now.
+- Binaries are in the Release folder.  Windows64 and Linux64 for now -- feel free to build and test on other platforms!
 - Download and move somewhere on your path, rename, etc.
 
 ## USAGE
