@@ -1,4 +1,4 @@
-# SAUCE-EDIT
+# 📝 SAUCE-EDIT
 A command-line SAUCE record editor for ANSI art files.
 
 ## INSTALL
@@ -9,7 +9,7 @@ A command-line SAUCE record editor for ANSI art files.
 ```go
 sauce-edit -path /path/to/file.ans
 ```
-No quotes around the path name; relative to your current working directory. If no other arguments are used, it will just output existing SAUCE record.
+- No quotes around the path name; relative to your current working directory. If no other arguments are used, it will just output existing SAUCE record.
 
 ## OPTIONAL ARGUMENTS
 ```
@@ -18,7 +18,12 @@ No quotes around the path name; relative to your current working directory. If n
 -author 'aLPHA'
 ```
 
-Single quotes only on the arguments!
+- ***Single quotes*** around the arguments!
+
+## License / Credit
+
+sauce-edit utilizies [go-ansi](https://github.com/ActiveState/go-ansi) which is released under the BSD 3-Clause license. It was, in turn, based on [ansilove/C](https://github.com/ansilove/ansilove). Refer to the go-ansi license for legal stuff! I thank these folks for making such awesome code. 👍
+
 
 ## TO-DO
 - Make Comment record editable
