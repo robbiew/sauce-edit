@@ -26,7 +26,7 @@ sauce-edit -path /path/to/file.ans
 -author 'aLPHA'
 ```
 
-- ***Single quotes*** around the arguments!
+- ❗ ***Single quotes*** around the arguments (otherwise Go will interpret special characters -- and that's not good!)
 
 ## License / Credit
 
