@@ -22,6 +22,7 @@ Single quotes only on the arguments!
 
 ## TO-DO
 - Make Comment record editable
-- Make a term-based GUI form
+- Optionally save as a new file instead of overwriting
+- Make it more of an interactive, term-based GUI form
 - Test Windows, ARM
-- Better theme laout and colors :)
+- Better theme/layout, colors :)
