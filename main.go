@@ -7,6 +7,8 @@ import (
 	"os"
 	"regexp"
 	"strings"
+
+	sauce "github.com/ActiveState/go-ansi"
 )
 
 const (
@@ -126,10 +128,10 @@ func main() {
 	}
 
 	// let's check the file for a valid SAUCE record
-	record := GetSauce(artPath)
+	record := sauce.GetSauce(artPath)
 
 	// abort if we don't find SAUCE
-	if string(record.Sauceinf.ID[:]) == SauceID {
+	if string(record.Sauceinf.ID[:]) == sauce.SauceID {
 
 		fmt.Printf("\n")
 		fmt.Printf(BgBlue + White + "     Edit SAUCE v.01 made by aLPHA      " + Reset + "\n")
@@ -176,7 +178,7 @@ func main() {
 				log.Fatal(err)
 			}
 			defer f.Close()
-			record := GetSauce(artPath)
+			record := sauce.GetSauce(artPath)
 			fmt.Printf(Green+"New Title    : "+GreenHi+"%s"+Reset+"\n", record.Sauceinf.Title)
 		}
 
@@ -201,7 +203,7 @@ func main() {
 				log.Fatal(err)
 			}
 			defer f.Close()
-			record := GetSauce(artPath)
+			record := sauce.GetSauce(artPath)
 			fmt.Printf(Green+"New Author   : "+GreenHi+"%s"+Reset+"\n", record.Sauceinf.Author)
 
 		}
@@ -226,7 +228,7 @@ func main() {
 				log.Fatal(err)
 			}
 			defer f.Close()
-			record := GetSauce(artPath)
+			record := sauce.GetSauce(artPath)
 			fmt.Printf(Green+"New Group    : "+GreenHi+"%s"+Reset+"\n", record.Sauceinf.Group)
 
 		}
@@ -236,17 +238,12 @@ func main() {
 
 }
 
-// GetSauce returns a sauce record for a given file if it exists
-func GetSauce(fileName string) Sauce {
-	return *readFileName(fileName)
-}
-
 func removeAnsi(str string) string {
 	stringB := strings.ToValidUTF8(str, "\b")
 	return re.ReplaceAllString(stringB, "")
 }
 
-func showSauce(record Sauce) {
+func showSauce(record sauce.Sauce) {
 	// fmt.Printf("Id       : %s v%s\n", record.Sauceinf.ID, record.Sauceinf.Version)
 	fmt.Printf(Green+"Title    : "+White+"%s"+Reset+"\n", record.Sauceinf.Title)
 	fmt.Printf(Green+"Author   : "+White+"%s"+Reset+"\n", record.Sauceinf.Author)

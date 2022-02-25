@@ -1,0 +1,4 @@
+github.com/ActiveState/go-ansi v0.0.0-20170913155945-e95170f796af h1:kTXJeSq7esO2YRS6YGDkm6thlIWMfcXLmbaslu3Ewis=
+github.com/ActiveState/go-ansi v0.0.0-20170913155945-e95170f796af/go.mod h1:lK9e8BKl+xMg1GQFX7Wh0aRLgqjZa+hFrMDO8RxIf5A=
+github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646 h1:zYyBkD/k9seD2A7fsi6Oo2LfFZAehjjQMERAvZLEDnQ=
+github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646/go.mod h1:jpp1/29i3P1S/RLdc7JQKbRpFeM1dOBd8T9ki5s+AY8=
